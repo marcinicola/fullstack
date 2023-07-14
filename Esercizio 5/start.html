@@ -29,15 +29,20 @@
     <input type="tel" name="telephone" id="telephone">
     <br>
     <select>
+      
       <option value="free">Gratis</option>
-      <option value="base">Base</option>
-      <option value="standard">Standard</option>
-      <option value="avanzato">Avanzato</option>
-
+      <optgroup label="Piani a Pagamento">
+      <option value="base">Base 9,99$</option>
+      <option value="standard">Standard 19,99$</option>
+      <option value="avanzato">Avanzato 29,99$</option>
+      </optgroup>
+      <br>
       <label for="pro">
+        <br>
         <input type="checkbox" name="pro" id="pro">
-        <strong>Pro</strong>
+        <strong>Pro 1000$</strong>
       </label>
+      <br>
     </select>
     <label for="credit_card"><strong>Credit Card Number</strong></label>
     <input type="number" name="credit_card" id="credit_card" min="0">
@@ -47,8 +52,7 @@
     <input type="text" name="expiration_date" id="expiration_date">
     <label for="billing_adress"><strong>Indirizzo Di Fatturazione</strong></label>
     <input type="text" name="billing_adress" id="billing_adress">
-    <br>
-    <input type="button" value="Invio">
+
   </form>
 
 
