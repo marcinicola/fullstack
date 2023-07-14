@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>HTML Lesson</title>
+  <style>
+    label {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="">
+    <label for="input_email"><strong>Email</strong></label>
+    <input type="email" name="input_email" id="input_email">
+    <label for="input_pass"><strong>Password</strong></label>
+    <input type="password" name="input_pass" id="input_pass">
+    <label for="input_name"><strong>Name</strong></label>
+    <input type="text" name="input_name" id="input_name">
+    <label for="input_lastname"><strong>Lastname</strong></label>
+    <input type="text" name="input_lastname" id="input_lastname">
+    <label for="date_of_birth"><strong>Date Of Birth</strong></label>
+    <input type="date" name="date_of_birth" id="date_of_birth">
+    <label for="telephone"><strong>Telephone</strong></label>
+    <input type="tel" name="telephone" id="telephone">
+    <br>
+    <select>
+      <option value="free">Gratis</option>
+      <option value="base">Base</option>
+      <option value="standard">Standard</option>
+      <option value="avanzato">Avanzato</option>
+
+      <label for="pro">
+        <input type="checkbox" name="pro" id="pro">
+        <strong>Pro</strong>
+      </label>
+    </select>
+    <label for="credit_card"><strong>Credit Card Number</strong></label>
+    <input type="number" name="credit_card" id="credit_card" min="0">
+    <label for="cvc"><strong>CVC</strong></label>
+    <input type="number" name="cvc" id="cvc" maxlength="3" min="0">
+    <label for="expiration_date"><strong>Scadenza</strong></label>
+    <input type="text" name="expiration_date" id="expiration_date">
+    <label for="billing_adress"><strong>Indirizzo Di Fatturazione</strong></label>
+    <input type="text" name="billing_adress" id="billing_adress">
+    <br>
+    <input type="button" value="Invio">
+  </form>
+
+
+</body>
+
+</html>
