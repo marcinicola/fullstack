@@ -11,31 +11,18 @@ const developerSalary = calculateSalary("developer");
 const otherSalary = calculateSalary("other");
 
 function calculateSalary(role) {
-  let salary;
-  let roleName;
   switch (role) {
     case "ceo":
-      roleName = "ceo"
-      salary = 2200;
-      break;
+      return 2200;
     case "manager":
-      roleName = "manager"  
-    salary = 1800;
-      break;
+      return 1800;
     case "cto":
-      roleName = "cto"
-      salary = 1800;
-      break;
+      return 1800;
     case "developer":
-      roleName = "developer"  
-    salary = 1500;
-      break;
+      return 1500;
     case "other":
-      roleName = "other"
-      salary = 1000;
-      break;
+      return 1000;
   }
-    return [roleName,salary];
 }
 
 console.log(ceoSalary);
