@@ -3,8 +3,11 @@ const person = {
   firstName: "Mario",
   lastName: "Rossi",
   age: 25,
-  toJSON: function () {
-    return this.id + " " + this.age
+  toJSON(){
+    return{
+      id: this.id, 
+      age: this.age
+    }
   },
 };
 
