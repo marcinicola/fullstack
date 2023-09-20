@@ -4,7 +4,18 @@ const user = {
   age: 25,
 };
 
-const setLocal = () => {
+function getUser (data) {
+  try {
+    const savedUser = JSON.parse(localStorage.getItem(data))
+    console.log("Saved User",savedUser);
+  } catch (error) {
+    console.error(error);
+  }
+}
+getUser("user");
+
+
+/* const setLocal = () => {
   const userJson = JSON.stringify(user);
   localStorage.setItem("user", userJson);
 };
@@ -15,6 +26,7 @@ const setStorage = () => {
 };
 setLocal(user);
 setStorage(user);
+ */
 
 /* const getData = () => {
   const userJSON = localStorage.getItem("user");

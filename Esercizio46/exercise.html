@@ -20,9 +20,9 @@
 </html>
 
 <script>
-  const $input = document.getElementsByClassName("form-input")
-  const valueFirst = $input[0].value
-  const valueSecond= $input[1].value
-  const valueThree = $input[2].value
-  console.log(valueFirst,valueSecond,valueThree);
+  const $input = document.getElementsByClassName("form-input[type='text']")
+  $input.array.forEach(el => {
+    console.log(el.value);
+  });
+  
 </script>

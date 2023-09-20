@@ -4,9 +4,20 @@ const user = {
   age: 25,
 };
 
-const setLocal = () => {
+const setLocal = (data) => {
+  try {
+   const userJson = JSON.stringify(data)
+   localStorage.setItem("user",userJson)
+  } catch (error) {
+    console.error(error)
+  }
+}
+
+setLocal(user);
+
+/* const setLocal = () => {
   const userJson= JSON.stringify(user);
   localStorage.setItem("user",userJson)
 }
 
-setLocal(user)
+setLocal(user) */
