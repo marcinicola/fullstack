@@ -4,14 +4,10 @@ const user = {
   age: 25,
 };
 
-function getUser (data) {
-  try {
+function getUser(data){
     const savedUser = JSON.parse(localStorage.getItem(data))
     console.log("Saved User",savedUser);
-  } catch (error) {
-    console.error(error);
-  }
-}
+} 
 getUser("user");
 
 
