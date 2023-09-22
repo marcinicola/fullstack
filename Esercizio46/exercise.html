@@ -20,9 +20,8 @@
 </html>
 
 <script>
-  const $input = document.getElementsByClassName("form-input[type='text']")
-  $input.array.forEach(el => {
-    console.log(el.value);
+  const $input = document.querySelectorAll(".form-input[type='text']");
+  $input.forEach((el) => {
+    console.log(el.value)
   });
-  
 </script>
